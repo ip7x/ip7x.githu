@@ -1,0 +1,10 @@
+{
+  "description": "Creates an elegant, interactive single-page slideshow with personalized messages, emojis, and animations to celebrate a friend's success in Iraqi dialect.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
