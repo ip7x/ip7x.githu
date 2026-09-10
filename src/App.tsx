@@ -260,7 +260,7 @@ function S0({ onNext }: { onNext:()=>void }) {
         <h1 className="text-6xl font-black leading-none mb-1">
           <Sh>جَنَّات</Sh>
         </h1>
-        <p className="text-rose-500 font-bold text-sm">🎓 بمناسبة نجاحها الرهيب من السادس الإعدادي</p>
+        <p className="text-rose-500 font-bold text-sm">🎓 مبروككك النجاحح جنوو 💖</p>
       </div>
 
       {step >= 1 && (
@@ -724,7 +724,7 @@ function PhotoCard({ src, label, big=false }: { src:string; label:string; big?:b
 // ── 9: Finale ─────────────────────────────────────────────────────────────────
 function S9({ onRestart }: { onRestart:()=>void }) {
   const [confetti, setConfetti] = useState(false);
-  const SENDER = "منتظر"; // اسم المُرسِل
+  const SENDER = "إسماعيل"; // اسم المُرسِل
 
   useEffect(() => {
     setConfetti(true);
