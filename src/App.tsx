@@ -256,7 +256,7 @@ function S0({ onNext }: { onNext:()=>void }) {
 
       {/* Name */}
       <div className="text-center">
-        <p className="text-rose-400 text-xs font-bold tracking-widest mb-1">🎀 هدية خاصة لـ 🎀</p>
+        <p className="text-rose-400 text-xs font-bold tracking-widest mb-1">🎀 هديتي البسيطة لـ 🎀</p>
         <h1 className="text-6xl font-black leading-none mb-1">
           <Sh>جَنَّات</Sh>
         </h1>
@@ -266,9 +266,9 @@ function S0({ onNext }: { onNext:()=>void }) {
       {step >= 1 && (
         <Card className="px-5 py-4 max-w-xs w-full" delay={0}>
           <p className="text-rose-700 text-sm font-medium leading-loose">
-            يا جنات يا عيني 🌹<br />
-            هاي الصفحة مهيأة خصيصاً إلك<br />
-            اضغطي وشوفي اشنو الفاجأة 🎀
+            يا جنات يا اسطورتي 🌹<br />
+            هاي الهدية شتغلت عليها اسبوع خصيصاً الج<br />
+            دوسي وشوفي اشنو الهدية 🎀
           </p>
         </Card>
       )}
@@ -281,7 +281,7 @@ function S0({ onNext }: { onNext:()=>void }) {
             boxShadow:"0 8px 30px rgba(232,82,122,0.45)",
             animation:"heartbeat 2.2s infinite slideInBottom 0.5s ease-out",
           }}>
-          يلّه دلّيني! 🌸
+          يلة دلّيني! 🌸
         </button>
       )}
 
@@ -308,7 +308,7 @@ function S1({ onNext }: { onNext:()=>void }) {
 
         <h2 className="text-xl font-black text-rose-600 mb-2">سؤال جد مهم 📚</h2>
         <p className="text-rose-800 text-sm font-medium leading-relaxed mb-4">
-          طول السنة... دگّيتيها وما خليتيها تگدر عليكِ؟
+           السنة هاي... طيحتي حضها وما خليتيها تگدر عليكج؟
           الدراسة، الامتحانات، الضغط... واجهتيهم كلهم؟
         </p>
 
@@ -317,9 +317,9 @@ function S1({ onNext }: { onNext:()=>void }) {
             <button onClick={() => setState("yes")}
               className="absolute px-6 py-2.5 rounded-full font-bold text-white shadow-md text-sm hover:scale-105 transition-all"
               style={{ background:"linear-gradient(135deg,#E8527A,#FF85A1)", left:"4%", top:"50%", transform:"translateY(-50%)" }}>
-              آي والله دگّيتها 💪
+              آي والله طيحت حضهاا 💪
             </button>
-            <EscapeBtn label="لا ما دگّيت 😴" onEscape={() => {}} />
+            <EscapeBtn label="لا ما كدرت 😴" onEscape={() => {}} />
           </div>
         )}
 
@@ -327,13 +327,13 @@ function S1({ onNext }: { onNext:()=>void }) {
           <div style={{ animation:"bounceIn 0.55s ease-out" }} className="space-y-3">
             <div className="text-4xl" style={{ animation:"heartbeat 1.5s infinite" }}>🥹</div>
             <p className="text-rose-600 font-bold text-sm leading-relaxed">
-              عرفت! بس گلبي شايف تعبك من البداية 💝<br/>
-              وأنا فخورة فيكِ والله فخورة يا قلبي!
+              عرفت! 💝<br/>
+              وأنا فخورة فيكِ والله فخورة يا جنوو!
             </p>
             <button onClick={onNext}
               className="px-7 py-2.5 rounded-full font-bold text-white shadow-md text-sm hover:scale-105 transition-all"
               style={{ background:"linear-gradient(135deg,#E8527A,#FF85A1)" }}>
-              التحدي الجاي ➜
+              السوئال الجاي ➜
             </button>
           </div>
         )}
@@ -341,7 +341,7 @@ function S1({ onNext }: { onNext:()=>void }) {
 
       {/* Stats meters */}
       <Card className="px-5 py-4 max-w-sm w-full space-y-2.5" delay={0.1}>
-        <p className="text-rose-500 text-xs font-bold mb-1 text-center">📊 إحصائيات جنات السرية</p>
+        <p className="text-rose-500 text-xs font-bold mb-1 text-center">📊 إحصائيات جنات الاسطورية</p>
         <MoodMeter label="مستوى الذكاء" emoji="🧠" />
         <MoodMeter label="قوة التحمّل" emoji="💪" />
         <MoodMeter label="كمية الحلاوة" emoji="🌹" />
@@ -365,11 +365,11 @@ function S2({ onNext }: { onNext:()=>void }) {
 
         <h2 className="text-xl font-black text-rose-600 mb-1">تحدي صعب شوية 🤔</h2>
         <p className="text-rose-800 text-sm font-medium leading-relaxed mb-2">
-          أحياناً تحسّين إنك تعبانة ولا أحد يفهم شعورك؟
+          مراتت تحسّين انج تعبانة ولا أحد يفهم شعورج؟
         </p>
         {escaped > 0 && (
           <p className="text-rose-400 text-xs mb-2" style={{ animation:"slideInBottom 0.3s ease-out" }}>
-            {escaped < 3 ? "😏 حاولي تمسكيه..." : escaped < 6 ? "😂 هاي الزر شطور مثلچ!" : "🤣 خلي عنه! هو مو راضي يتمسك!"}
+            {escaped < 3 ? "😏 جربي دوسي ..." : escaped < 6 ? "😂 هاذا الزر شطور مثلچ!" : "🤣 عوفي! هو ما يحب ينلمس نحيس !"}
           </p>
         )}
 
@@ -378,17 +378,17 @@ function S2({ onNext }: { onNext:()=>void }) {
             <button onClick={() => setAnswered(true)}
               className="absolute px-5 py-2.5 rounded-full font-bold text-white shadow-md text-sm"
               style={{ background:"linear-gradient(135deg,#E8527A,#FF85A1)", left:"4%", top:"50%", transform:"translateY(-50%)" }}>
-              آي أحياناً أحس هيچ 🥲
+              آي مراتت أحس هيچ 🥲
             </button>
-            <EscapeBtn label="لا ما وحدي 💪" onEscape={() => setEscaped(e => e+1)} />
+            <EscapeBtn label="لا اني قويةةة  💪" onEscape={() => setEscaped(e => e+1)} />
           </div>
         ) : (
           <div style={{ animation:"bounceIn 0.55s ease-out" }} className="space-y-2">
             <div className="text-4xl">🤗</div>
             <p className="text-rose-600 font-bold text-sm leading-relaxed">
-              يا عيني عليكِ 💞<br/>
-              ربّك شايفك دايماً، وكل اللي يحبونك<br/>
-              حاسين فيكِ حتى لو ما تگولين شي!
+              يا عمريي انت 💞<br/>
+              الله شايفح دايماً، وكل اللي اليحبوج<br/>
+              حاسين بيج حتى لو ما تگولين شي!
             </p>
             <button onClick={onNext}
               className="px-7 py-2.5 rounded-full font-bold text-white shadow-md text-sm hover:scale-105 transition-all"
@@ -401,7 +401,7 @@ function S2({ onNext }: { onNext:()=>void }) {
 
       <Card className="px-5 py-3 max-w-sm w-full" delay={0.15}>
         <p className="text-rose-500 text-xs font-bold text-center">
-          💡 معلومة: الزر هرب {escaped} مرة — وإنتِ ما هربتِ من شي بحياتك! 🌟
+          💡 معلومة: الزر شرد {escaped} مرة — وإنتِ ما شردتي  شكدد قوية لعد! 🌟
         </p>
       </Card>
     </div>
@@ -424,7 +424,7 @@ function S3({ onNext }: { onNext:()=>void }) {
         <div className="space-y-2 text-right mb-4">
           <p className="text-rose-800 text-sm font-medium leading-relaxed">
             بعد كل هذا التعب والكد والصبر...
-            <br />تگدرين تگولين للنفس: "أنا تستاهل كل شي حلو"؟ 🌹
+            <br />تگدرين تگولين لنفسج: "اني استاهلل كل شي حلو"؟ 🌹
           </p>
         </div>
 
@@ -433,28 +433,28 @@ function S3({ onNext }: { onNext:()=>void }) {
             <button onClick={() => { setAnswered(true); setClicked("yes"); }}
               className="absolute px-5 py-2.5 rounded-full font-bold text-white shadow-md text-sm hover:scale-105 transition-all"
               style={{ background:"linear-gradient(135deg,#E8527A,#FF85A1)", left:"4%", top:"50%", transform:"translateY(-50%)" }}>
-              آي أستاهل! 👑
+              آي انيي استاهل وكفوو! 👑
             </button>
-            <EscapeBtn label="ما أستاهل 😔" onEscape={() => { setAnswered(true); setClicked("no"); }} />
+            <EscapeBtn label="لا ما اعتقد 😔" onEscape={() => { setAnswered(true); setClicked("no"); }} />
           </div>
         ) : (
           <div style={{ animation:"bounceIn 0.55s ease-out" }} className="space-y-3">
             <Stars n={5} />
             {clicked === "yes" ? (
               <p className="text-rose-600 font-bold text-sm leading-relaxed">
-                صح! وأنا بضمن إنك تستاهلين أكثر مما تتخيلين! 🌟<br/>
-                النجاح هذا بس أول خطوة يا غالية 🚀
+                صح! واني اضمنن انج تستاهلين أكثر مما تتخيلين! 🌟<br/>
+                النجاح هذا بس أول خطوة يا اسطورتي جنوو 🚀
               </p>
             ) : (
               <p className="text-rose-600 font-bold text-sm leading-relaxed">
-                گلبي 🥺 إنتِ تستاهلين الدنيا وما فيها!<br/>
-                ربّك شايف تعبك وما ينسى صبرك أبد 💝
+                يعمريي 🥺 إنتِ تستاهلين الدنيا وما بيهاا!<br/>
+                الله واني شايفين تعبج وما ننسا صبرج أبد 💝
               </p>
             )}
             <button onClick={onNext}
               className="px-7 py-2.5 rounded-full font-bold text-white shadow-md text-sm hover:scale-105 transition-all"
               style={{ background:"linear-gradient(135deg,#FFD700,#FFA500)", animation:"heartbeat 1.5s infinite" }}>
-              شوف المفاجأة 🎁
+              باعيي هنانة  🎁
             </button>
           </div>
         )}
@@ -469,9 +469,9 @@ function S4({ onNext }: { onNext:()=>void }) {
     ["✨","إنتِ مو بس ناجحة من السادس الإعدادي..."],
     ["💪","إنتِ ناجحة بكل تعبك وصبرك ومثابرتك"],
     ["📚","كل ورقة درستيها وكل سؤال كتبتيه ما ضاع"],
-    ["🌟","هذا النجاح يجيب البسمة على كل اللي يحبونك"],
-    ["🤲","والله يكمّل عليكِ ويفتح إلك أبواب الخير الكبير"],
-    ["👑","وإنتِ دايماً الأفضل بنظر اللي يعرفونك"],
+    ["🌟","هذا النجاح بداية طريق دكتورتنة جنوو"],
+    ["🤲","والله يفتحلج أبواب الخير ولبركة يا بطلة"],
+    ["👑","وإنتِ دايماً الأفضل ولاقوااا ولاحسنن اانتي ملكة جنات  "],
   ];
 
   return (
@@ -481,7 +481,7 @@ function S4({ onNext }: { onNext:()=>void }) {
         style={{ animation:"float 4s ease-in-out infinite", filter:"drop-shadow(0 4px 15px rgba(232,82,122,0.35))" }} />
 
       <Card className="p-5 max-w-sm w-full" delay={0}>
-        <h2 className="text-2xl font-black mb-3"><Sh>يا جنات يا غالية</Sh></h2>
+        <h2 className="text-2xl font-black mb-3"><Sh>دكتورة جنات يا اسطورة</Sh></h2>
         <div className="space-y-2 text-right">
           {lines.map(([icon, text], i) => (
             <p key={i} className="text-rose-700 font-medium text-sm leading-loose"
@@ -495,7 +495,7 @@ function S4({ onNext }: { onNext:()=>void }) {
       <button onClick={onNext}
         className="px-8 py-3 rounded-full font-bold text-white shadow-lg hover:scale-105 transition-all"
         style={{ background:"linear-gradient(135deg,#E8527A,#FF85A1)" }}>
-        في شي أحلى! 👇
+        اكو شي أحلى! 👇
       </button>
     </div>
   );
@@ -509,7 +509,7 @@ function S5({ onNext }: { onNext:()=>void }) {
         style={{ animation:"float 3.5s ease-in-out infinite", border:"3px solid #FFB6C1" }} />
 
       <Card className="p-5 max-w-sm w-full space-y-3" delay={0}>
-        <h2 className="text-xl font-black text-rose-600">💌 رسالة من گلبي</h2>
+        <h2 className="text-xl font-black text-rose-600">💌 رسالة من گلبي الحنون</h2>
         <div
           className="rounded-2xl p-4 text-right space-y-2"
           style={{ background:"linear-gradient(135deg,#FFF0F5,#FFE4EE)", borderRight:"3px solid #E8527A" }}>
@@ -517,7 +517,7 @@ function S5({ onNext }: { onNext:()=>void }) {
             يا جنات...
           </p>
           <TypeWriter
-            text="لو گدرت أوصف قد شبيبي فيكِ ما گدرت، لأن الكلام أضعف من الإحساس 💕"
+            text="لو گدرت أوصف شكدد فخوورر بيج ما گدرت، لأن الكلام أضعف من الإحساس 💕"
             speed={50}
             className="text-rose-600 font-medium text-sm leading-loose"
           />
@@ -525,9 +525,9 @@ function S5({ onNext }: { onNext:()=>void }) {
         <div className="space-y-1.5 text-right">
           {[
             ["🦋","إنتِ مو بس طالبة ذكية — إنتِ واحدة بألف"],
-            ["💫","وكل شي تحلمين فيه قريب منكِ أكثر مما تتخيلين"],
-            ["🌸","واللي يحبونك شايفين فيكِ كل الفخر"],
-            ["🤲","ربّك ما ينسى صبرك — وبركته دايماً وياكِ"],
+            ["💫","وكل شي تحلمين فيه قريب منج أكثر مما تتخيلين"],
+            ["🌸","وكل الحواليج يحبونج وشايفين بيج كل الفخر"],
+            ["🤲","ربّك ما ينسى صبرج — وبركته دايماً وياكِ"],
           ].map(([icon,text],i) => (
             <p key={i} className="text-rose-700 font-medium text-sm leading-loose"
               style={{ animation:`slideInBottom 0.45s ${0.1+i*0.1}s ease-out both` }}>
@@ -540,7 +540,7 @@ function S5({ onNext }: { onNext:()=>void }) {
       <button onClick={onNext}
         className="px-8 py-3 rounded-full font-bold text-white shadow-lg hover:scale-105 transition-all"
         style={{ background:"linear-gradient(135deg,#E8527A,#FF85A1)" }}>
-        والله في أحلى 😭✨
+        خلصنةة شبيجج بس هاي  😭✨
       </button>
     </div>
   );
@@ -551,9 +551,9 @@ function S6({ onNext }: { onNext:()=>void }) {
   const [active, setActive] = useState(0);
   const quotes = [
     { q:"\"النجاح مو بالصدفة، هو ثمرة الصبر والاجتهاد، وإنتِ زرعتِ الاثنين...\"", e:"🌱" },
-    { q:"\"كل دمعة تعب انسكبت... صارت ضوء بطريقك!\"", e:"💡" },
+    { q:"\"كل دمعة تعب نزلت... صارت ضوء بطريقج اسطورتي!\"", e:"💡" },
     { q:"\"الأذكياء يدرسون، لكن الأقوياء يكملون حتى لو تعبوا — وإنتِ الثنتين.\"", e:"👑" },
-    { q:"\"مو المهم وين بدأتِ، المهم وين راحت توصلين.\"", e:"🚀" },
+    { q:"\"مو المهم وين بدأتِ، المهم وين راح توصلين.\"", e:"🚀" },
   ];
   useEffect(() => {
     const t = setInterval(() => setActive(a => (a+1) % quotes.length), 3500);
@@ -566,7 +566,7 @@ function S6({ onNext }: { onNext:()=>void }) {
 
       <Card className="p-5 max-w-sm w-full space-y-4" delay={0}>
         <div className="text-4xl" style={{ animation:"starPop 2.2s ease-in-out infinite" }}>✨</div>
-        <h2 className="text-xl font-black text-rose-600">كلام من ذهب 👑</h2>
+        <h2 className="text-xl font-black text-rose-600">كلام مني الج 👑</h2>
 
         {/* Rotating quote */}
         <div className="rounded-2xl p-4 min-h-[90px] flex flex-col items-center justify-center transition-all duration-500"
@@ -591,7 +591,7 @@ function S6({ onNext }: { onNext:()=>void }) {
         </div>
 
         <div className="space-y-1.5 text-right">
-          {[["🤲","ربّك يوفّقك ويسهّل طريقك دايماً"],["💖","ومستقبلك يكون أضوى من النجوم"]].map(([ic,tx],i) => (
+          {[["🤲","ربّك يوفقج ويسهّل طريقج دايماً"],["💖","ومستقبلج يكون أضوى من النجوم"]].map(([ic,tx],i) => (
             <p key={i} className="text-rose-700 font-medium text-xs leading-loose">{ic} {tx}</p>
           ))}
         </div>
@@ -604,7 +604,7 @@ function S6({ onNext }: { onNext:()=>void }) {
           boxShadow:"0 6px 25px rgba(255,165,0,0.4)",
           animation:"heartbeat 2s infinite",
         }}>
-        شوف المفاجأة الكبيرة 🎁✨
+        اخر شي والله صبريي 🎁✨
       </button>
     </div>
   );
@@ -613,23 +613,23 @@ function S6({ onNext }: { onNext:()=>void }) {
 // ── 7: حفلة الرقص ────────────────────────────────────────────────────────────
 function S7({ onNext }: { onNext:()=>void }) {
   const [reaction, setReaction] = useState<string|null>(null);
-  const reactions = ["😂 صح صح!","🤣 هاي هي!","😭 والله إيد!","💀 ما توقعتها!","🤌 شبيحة!"];
+  const reactions = ["😂 هلا شعر شعر!","🤣 وجنو نجخت كككللليشش!","😭 لك هلاااا شدد ابوية شدد !","💀ما توقعتها! ","🤌 شبيج!"];
   const [ri, setRi] = useState(0);
 
   return (
     <div className="flex flex-col items-center justify-center size-full gap-2 px-4 py-5">
       <h2 className="text-xl font-black text-center" style={{ animation:"heartbeat 1.5s infinite" }}>
-        <Sh>🎊 حفلة النجاح يا جنات! 🎊</Sh>
+        <Sh>🎊 هاي لحفلة ماتج! 🎊</Sh>
       </h2>
-      <p className="text-rose-400 text-xs font-bold">الكل يحتفل وياكِ 🕺💃</p>
+      <p className="text-rose-400 text-xs font-bold">الكل يحتفل ويااجج 🕺💃</p>
 
       {/* Dance grid */}
       <div className="grid grid-cols-2 gap-2 w-full max-w-sm">
         {[
-          { src:zeroTwo, label:"Zero Two ترقص 🌸", bg:"bg-amber-50" },
-          { src:dancingPinkHair, label:"الحفلة تبدأ! 🎉", bg:"bg-white" },
-          { src:hulkDance, label:"هالك: MBROOOK 💪", bg:"bg-green-50" },
-          { src:cockroach, label:"صرصور الكاوبوي 🤠😂", bg:"bg-yellow-50" },
+          { src:zeroTwo, label:"Zero Two انمي 🌸", bg:"bg-amber-50" },
+          { src:dancingPinkHair, label:"الحفلة لعيونجج كومي هزي! 🎉", bg:"bg-white" },
+          { src:hulkDance, label:"لجج حتة هالك ركصلج: MBROOOK 💪", bg:"bg-green-50" },
+          { src:cockroach, label:"صرصور بعد شتردين 🤠😂", bg:"bg-yellow-50" },
         ].map((item, i) => (
           <div key={i}
             className={`rounded-2xl overflow-hidden border-2 border-rose-200 shadow-lg cursor-pointer hover:scale-105 transition-all ${item.bg}`}
@@ -647,12 +647,12 @@ function S7({ onNext }: { onNext:()=>void }) {
           {reaction}
         </div>
       )}
-      <p className="text-rose-400 text-xs">اضغطي على الصور للتفاعل 😄</p>
+      <p className="text-rose-400 text-xs">دوسي على الصور للتفاعل 😄</p>
 
       <button onClick={onNext}
         className="px-9 py-3 rounded-full font-black text-white shadow-xl hover:scale-105 transition-all"
         style={{ background:"linear-gradient(135deg,#E8527A,#FF85A1)", boxShadow:"0 8px 30px rgba(232,82,122,0.45)" }}>
-        الختام 🌹👑
+        النهاية 🌹👑
       </button>
     </div>
   );
@@ -662,16 +662,16 @@ function S7({ onNext }: { onNext:()=>void }) {
 function S8({ onNext }: { onNext:()=>void }) {
   const photos = [
     { src:pinkGirl, label:"عيوني 🌸", size:"big" },
-    { src:miku, label:"ميكو تهدي وردة 🌹", size:"small" },
-    { src:kawaiiCat, label:"قطة كيوت زيّك 🐱", size:"small" },
+    { src:miku, label:"وردة لشطورة 🌹", size:"small" },
+    { src:kawaiiCat, label:"قطة كيوت مثلج 🐱", size:"small" },
     { src:catGirlSleep, label:"راحة بعد التعب 😴💕", size:"small" },
-    { src:mikuGun, label:"لا تزعلينا 😂", size:"small" },
+    { src:mikuGun, label:"لا تعصبون جنو 😂", size:"small" },
   ];
 
   return (
     <div className="flex flex-col items-center justify-center size-full gap-3 px-5 py-5">
       <h2 className="text-xl font-black"><Sh>🖼️ صالة جنات الحلوة</Sh></h2>
-      <p className="text-rose-400 text-xs font-bold">اضغطي على الصور 😄</p>
+      <p className="text-rose-400 text-xs font-bold">دوسي على الصور 😄</p>
 
       <div className="grid grid-cols-3 gap-2 w-full max-w-sm">
         {/* Big feature */}
@@ -686,7 +686,7 @@ function S8({ onNext }: { onNext:()=>void }) {
       <button onClick={onNext}
         className="px-8 py-3 rounded-full font-bold text-white shadow-lg hover:scale-105 transition-all"
         style={{ background:"linear-gradient(135deg,#E8527A,#FF85A1)" }}>
-        ويّه 🌟 الختام!
+        وصلنة دوسي🌟!
       </button>
     </div>
   );
@@ -724,7 +724,7 @@ function PhotoCard({ src, label, big=false }: { src:string; label:string; big?:b
 // ── 9: Finale ─────────────────────────────────────────────────────────────────
 function S9({ onRestart }: { onRestart:()=>void }) {
   const [confetti, setConfetti] = useState(false);
-  const SENDER = "إسماعيل"; // اسم المُرسِل
+  const SENDER = "المزعج منتظر"; // اسم المُرسِل
 
   useEffect(() => {
     setConfetti(true);
@@ -757,11 +757,11 @@ function S9({ onRestart }: { onRestart:()=>void }) {
 
         <div className="space-y-1.5 text-right">
           {[
-            ["🥹","ما أگدر أعبّر عن قد شبيبي فيكِ يا جنات"],
+            ["🥹","ما أگدر أعبّر عن شكد فخوررر بيج يا جنات"],
             ["🌹","من السادس الإعدادي لأحسن مستقبل بالدنيا"],
-            ["🤲","الله يكمّل عليكِ ويوفّقك كل خطوة تخطيها"],
+            ["🤲","الله يكمّل عليكج ويوفّقج كل خطوة تخطيها"],
             ["👑","ودايماً تبقين النجمة الأحلى بقلوبنا"],
-            ["💫","إنتِ مو بس ناجحة — إنتِ فخر اللي يحبونك"],
+            ["💫","إنتِ مو بس ناجحة — إنتِ فخر اللي يا بطلة شوفي مخاب ضني بيج"],
           ].map(([ic,tx],i) => (
             <p key={i} className="text-rose-700 font-bold text-sm leading-loose"
               style={{ animation:`slideInBottom 0.4s ${i*0.1}s ease-out both` }}>
@@ -779,7 +779,7 @@ function S9({ onRestart }: { onRestart:()=>void }) {
           <p className="text-rose-600 font-black text-lg" style={{ animation:"heartbeat 2s infinite" }}>
             💌 {SENDER} 💌
           </p>
-          <p className="text-rose-400 text-xs mt-1">دايماً فخور فيكِ 🌹</p>
+          <p className="text-rose-400 text-xs mt-1">اجي يمج بلاش مو ؟ فخور بيجج جنووو 🌹</p>
         </div>
       </Card>
 
@@ -796,7 +796,7 @@ function S9({ onRestart }: { onRestart:()=>void }) {
 
       <button onClick={onRestart}
         className="px-6 py-2 rounded-full font-bold text-rose-400 border-2 border-rose-200 bg-white/70 hover:scale-105 transition-all text-sm">
-        من البداية 🔄
+        تحبين تعيدين 🔄
       </button>
     </div>
   );
